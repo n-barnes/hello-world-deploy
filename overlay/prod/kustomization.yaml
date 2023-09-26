@@ -30,6 +30,5 @@ patches:
       value: nginx:latest
   target:
     kind: Deployment
-    app: helloworld
 resources:
 - ../../base
