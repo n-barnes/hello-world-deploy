@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+patches:
+  # name
+  - path: hello-world-deployment-patch.yaml
+    target:
+      version: v1
+      kind: Deployment
+      namespace: nb-test
+
+  # service to loadbalancer
+  - path: hello-world-service-patch.yaml
+    target:
+      version: v1
+      kind: Service
+      namespace: nb-test
