@@ -3,7 +3,7 @@ kind: Kustomization
 
 helmCharts:
   - name: external-dns
-    repo: https://n-barnes.github.io/hello-world-helm/
+    repo: https://n-barnes.github.io/hello-world-helm-chart/
     version: 0.1.0
     releaseName: hello-world
     namespace: nb-test
