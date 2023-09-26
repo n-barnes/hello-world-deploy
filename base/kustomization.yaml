@@ -6,4 +6,4 @@ helmCharts:
     repo: https://n-barnes.github.io/hello-world-helm/
     version: 0.1.0
     releaseName: hello-world
-    namespace: hello-world
+    namespace: nb-test
